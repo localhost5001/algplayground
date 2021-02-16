@@ -22,7 +22,7 @@ export function PostOrderTraversal(node: Node) {
     if (!node) {
         return
     }
-    PreOrderTraversal(node.left)
-    PreOrderTraversal(node.right)
+    PostOrderTraversal(node.left)
+    PostOrderTraversal(node.right)
     console.log(node.val)
 }
